@@ -1,0 +1,67 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 600px;
+    padding-left: 100px;
+    padding-right:100px ;
+    flex-wrap: wrap;
+    color: white;
+}
+.left h1{
+    position: relative;
+    padding: 5px 10px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+.left h1::after{
+  content: '';
+  height: 1px;
+  background-color: goldenrod;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+}
+.left >div{
+    margin-bottom: 20px;
+}
+.right{
+ width: 600px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+}
+.left i{
+    color: goldenrod;
+    margin-right: 15px;
+}
+.right input{
+    height: 50px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.right textarea{
+    height: 100px;
+    border-radius: 8px;
+   width: 100%;
+}
+.main button{ 
+    min-width: 150px;
+    padding: 14px 20px;
+    color:white;
+    background-color: goldenrod;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.right input{
+ padding-left:15px;
+ color:white;
+}
+.right textarea{
+    padding-left: 15px;
+    padding-top: 10px;
+    color:white;
+}

@@ -1,0 +1,41 @@
+.main{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 600px;
+    flex-wrap: wrap;
+    color: white;
+} 
+.heading{
+    font-size: 2rem;
+    padding: 5px 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.heading::after{
+    content: '';
+    height: 1px;
+    background-color: goldenrod;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+  }
+.grid{
+    display: flex;
+    justify-self: center;
+    padding: 10px;
+    border-radius: 5px;
+    height: auto;
+    width: 60vw;
+   
+}
+
+@media  screen and (max-width:800px) {
+    .grid{
+        width: 90%;
+    }
+    .main{ margin-top: 0px;}
+}
